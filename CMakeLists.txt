@@ -12,5 +12,6 @@ FetchContent_MakeAvailable(flags)
 
 FILE(GLOB src src/*.cc)
 FILE(GLOB directors src/directors/*.cc)
+FILE(GLOB builders src/builders/*.cc)
 include_directories(${flags_SOURCE_DIR}/include)
-add_executable(maze src/main.cpp ${src} ${directors})
+add_executable(maze src/main.cpp ${src} ${directors} ${builders})
