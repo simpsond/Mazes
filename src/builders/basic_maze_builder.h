@@ -5,7 +5,7 @@
 #ifndef MAZE__BASIC_MAZE_BUILDER_H_
 #define MAZE__BASIC_MAZE_BUILDER_H_
 
-#include "maze.h"
+#include "../maze.h"
 #include "maze_builder.h"
 
 class BasicMazeBuilder : public MazeBuilder  {

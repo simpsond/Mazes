@@ -3,7 +3,7 @@
 //#include "recursive_back_track_director.h"
 //#include "aldous_broder_director.h"
 #include "directors/binary_tree_director.h"
-#include "basic_maze_builder.h"
+#include "builders/basic_maze_builder.h"
 #include "fancy_console_maze_view.h"
 #include "console_maze_viewer.h"
 
@@ -14,7 +14,10 @@ int main(int argc, char** argv) {
 
   BasicMazeBuilder builder;
   BinaryTreeDirector director(&builder);
-  director.Construct({args.get<unsigned int>("width", 10), args.get<unsigned int>("height", 10)});
+  director.Construct({
+    args.get<unsigned int>("width", 10),
+    args.get<unsigned int>("height", 10)
+        });
 
   Maze* maze = builder.GetMaze();
 

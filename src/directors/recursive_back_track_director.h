@@ -5,7 +5,7 @@
 #ifndef MAZE__RECURSIVE_BACK_TRACK_DIRECTOR_H_
 #define MAZE__RECURSIVE_BACK_TRACK_DIRECTOR_H_
 
-#include "../maze_builder.h"
+#include "../builders/maze_builder.h"
 #include "director.h"
 
 class RecursiveBackTrackDirector : public Director {

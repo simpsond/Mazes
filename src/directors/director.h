@@ -8,7 +8,7 @@
 #include <random>
 #include "../common.h"
 #include "../maze.h"
-#include "../maze_builder.h"
+#include "../builders/maze_builder.h"
 
 class Director {
  public:

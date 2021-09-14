@@ -3,7 +3,7 @@
 //
 
 #include "basic_maze_builder.h"
-#include "wall.h"
+#include "../wall.h"
 
 BasicMazeBuilder::BasicMazeBuilder() {
   maze_ = nullptr;
